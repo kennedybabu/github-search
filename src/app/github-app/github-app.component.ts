@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserServiceService } from '../user-service.service';
 
 @Component({
   selector: 'app-github-app',
@@ -9,11 +10,20 @@ export class GithubAppComponent implements OnInit {
 
 
   public userQuery!:string
+  public userProfile!:any
+  public userRepos!:any[]
+  returnedData:any
 
-  searchUser(){
-    
+  searchUser(userQuery:any){
+    this.userService.getUserProfile(this.userQuery).subscribe(userData=> {
+      this.returnedData = userData
+
+    })
+    this.userService.getUserRepos(this.userQuery).subscribe(userData => {
+      
+    })
   }
-  constructor() { }
+  constructor(private userService:UserServiceService) { }
 
   ngOnInit(): void {
   }
