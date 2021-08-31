@@ -8,14 +8,16 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
-import { UserDataComponent } from './user-data/user-data.component'
+import { UserDataComponent } from './user-data/user-data.component';
+import { UserReposComponent } from './user-repos/user-repos.component'
 @NgModule({
   declarations: [
     AppComponent,
     GithubAppComponent,
     UserProfileComponent,
     UserDetailComponent,
-    UserDataComponent
+    UserDataComponent,
+    UserReposComponent
   ],
   imports: [
     BrowserModule,

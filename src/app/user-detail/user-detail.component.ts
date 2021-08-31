@@ -14,7 +14,7 @@ export class UserDetailComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.userProfile)
+    // console.log(this.userProfile)
   }
 
 }
