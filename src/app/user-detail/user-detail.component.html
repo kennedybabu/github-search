@@ -2,6 +2,7 @@
     <div class="user-img">
         <img [src]="userProfile.avatar_url" alt="user photo">
     </div>
-    <h4 class="card-title">{{userProfile.login}}</h4>
+    <h4 class="card-title mt-2">{{userProfile.login}}</h4>
     <p>{{userProfile.bio}}</p>
+    <a [href]="userProfile.html_url" target="_blank" class="btn-sm">View Profile</a>
 </div>
