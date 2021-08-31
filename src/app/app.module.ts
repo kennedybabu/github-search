@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubAppComponent } from './github-app/github-app.component';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from "@angular/common/http"
+import {HttpClientModule} from "@angular/common/http";
+import { UserProfileComponent } from './user-profile/user-profile.component'
 @NgModule({
   declarations: [
     AppComponent,
-    GithubAppComponent
+    GithubAppComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
