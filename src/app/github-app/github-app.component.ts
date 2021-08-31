@@ -28,7 +28,7 @@ export class GithubAppComponent implements OnInit {
     this.userService.getUserRepos(this.userQuery).subscribe(userData => {
       this.userRepos= userData
 
-      // console.log(this.userRepos)
+      console.log(this.userRepos)
     })
   }
   constructor(private userService:UserServiceService) { }

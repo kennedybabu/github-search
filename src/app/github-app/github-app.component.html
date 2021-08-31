@@ -8,7 +8,7 @@
 
             </div> -->
             <div class="search-body">
-                <form class="form-inline" (submit)="searchUser(userQuery)">
+                <form class="form-inline" #search (submit)="searchUser(userQuery)">
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search Github" name="user" [(ngModel)]="userQuery">
                     </div>
