@@ -1,6 +1,8 @@
 <div>
-    <p>{{userProfile.followers}}</p>
-    <p>Joined: {{userProfile.created_at | date}}</p>
+    <p>Followers: {{userProfile.followers}}</p>
+    <p>Followers: {{userProfile.following}}</p>
 
-    <p>No. of Repos: {{userProfile.public_repos}}</p>
+    <p>Joined: {{userProfile.created_at | dateCount}} days ago.</p>
+
+    <p>No. of public Repos: {{userProfile.public_repos}}</p>
 </div>

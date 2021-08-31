@@ -9,13 +9,16 @@ export class UserServiceService {
 
   constructor(private httpClient: HttpClient) { }
 
+  private apiUrl = environment.apiUrl
+  private token = environment.token
+
   getUserProfile(searchQuery:any){
-    return this.httpClient.get(`https://api.github.com/users/${searchQuery}?access_token=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`)
+    return this.httpClient.get(`${this.apiUrl}${searchQuery}${this.token}`)
 
   }
 
   getUserRepos(searchQuery:any){
-    return this.httpClient.get<any[]>(`https://api.github.com/users/${searchQuery}/repos?access_token=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`)
+    return this.httpClient.get<any[]>(`${this.apiUrl}${searchQuery}/repos?${this.token}`)
 
   }
 }

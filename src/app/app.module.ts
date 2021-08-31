@@ -9,7 +9,8 @@ import {HttpClientModule} from "@angular/common/http";
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserDataComponent } from './user-data/user-data.component';
-import { UserReposComponent } from './user-repos/user-repos.component'
+import { UserReposComponent } from './user-repos/user-repos.component';
+import { DateCountPipe } from './date-count.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { UserReposComponent } from './user-repos/user-repos.component'
     UserProfileComponent,
     UserDetailComponent,
     UserDataComponent,
-    UserReposComponent
+    UserReposComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
