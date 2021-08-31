@@ -1,19 +1,18 @@
+<!-- <ng-progress></ng-progress> -->
+
 <div class="container mt-4">
     <div class="row">
         <div class="col">
             <div class="search-header">
                 <h4>Github Search</h4>
             </div>
-            <!-- <div>
-
-            </div> -->
+           
             <div class="search-body">
                 <form class="form-inline" #search (submit)="searchUser(userQuery)">
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search Github" name="user" [(ngModel)]="userQuery">
                     </div>
 
-                    <!-- {{userQuery}} -->
                     <div>
                         <button type="submit" value="search" class="btn ml-3">Search</button>
                     </div>
