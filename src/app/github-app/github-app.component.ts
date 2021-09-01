@@ -22,7 +22,7 @@ export class GithubAppComponent implements OnInit {
   searchUser(userQuery:any){
     this.userService.getUserProfile(this.userQuery).subscribe(userData=> {
       this.userProfile = userData
-      console.log(this.userProfile)
+      // console.log(this.userProfile)
 
     })
     this.userService.getUserRepos(this.userQuery).subscribe(userData => {

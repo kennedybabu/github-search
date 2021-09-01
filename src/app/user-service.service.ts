@@ -11,11 +11,13 @@ export class UserServiceService {
 
   private apiUrl = environment.apiUrl
   private token = environment.token
+  private clientId = environment.clientId
+  private clientSecret = environment.clientSecret
 
 
   //fetch data from the API
   getUserProfile(searchQuery:any){
-    return this.httpClient.get(`${this.apiUrl}${searchQuery}${this.token}`)
+    return this.httpClient.get(`https://api.github.com/users/${searchQuery}?${this.clientId}&client_secret=${this.clientSecret}`)
 
   }
 
