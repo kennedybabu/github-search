@@ -17,6 +17,8 @@ export class GithubAppComponent implements OnInit {
   public userRepos!: Repo[]
   returnedData:any
 
+
+  //get user data from API
   searchUser(userQuery:any){
     this.userService.getUserProfile(this.userQuery).subscribe(userData=> {
       this.userProfile = userData

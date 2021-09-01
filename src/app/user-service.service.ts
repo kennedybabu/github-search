@@ -12,6 +12,8 @@ export class UserServiceService {
   private apiUrl = environment.apiUrl
   private token = environment.token
 
+
+  //fetch data from the API
   getUserProfile(searchQuery:any){
     return this.httpClient.get(`${this.apiUrl}${searchQuery}${this.token}`)
 
